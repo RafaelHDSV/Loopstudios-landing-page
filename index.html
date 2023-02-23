@@ -50,7 +50,7 @@
       position: absolute;
       background-color: var(--black);
       width: 100%;
-      height: calc(100% - .3rem);
+      height: calc(100% - .6rem);
       opacity: 35%;
       z-index: -1;
     }
@@ -60,7 +60,7 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      padding: 6rem 14rem 0 14rem;
+      padding: 6rem 10rem 0 10rem;
     }
 
     .options {
@@ -85,9 +85,24 @@
       font-size: 81px;
       font-weight: lighter;
       border: 2px solid var(--white);
-      margin: 0 0 0 13.5rem;
+      margin: 0 0 0 10rem;
       padding: 2.5rem;
       max-width: 50rem;
+    }
+
+    .interactive {
+      position: relative;
+      padding: 10rem;
+    }
+
+    .interactive img {
+      max-width: 60rem;
+      width: 100%;
+    }
+
+    .interactive .text {
+      position: absolute;
+      background-color: var(--white);
     }
   </style>
 </head>
@@ -111,14 +126,16 @@
     <h1>Immersive experiences that deliver</h1>
   </header>
 
-  <!-- Immersive experiences that deliver -->
+  <div class="interactive">
+    <img src="images/desktop/image-interactive.jpg" alt="image-interactive.jpg">
 
-  <!-- The leader in interactive VR -->
-
-  <!-- Founded in 2011, Loopstudios has been producing world-class virtual reality -->
-  <!-- projects for some of the best companies around the globe. Our award-winning -->
-  <!-- creations have transformed businesses through digital experiences that bind -->
-  <!-- to their brand. -->
+    <div class="text">
+      <h2>The leader in interactive VR</h2>
+      <p>Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best
+        companies around the globe. Our award-winning creations have transformed businesses through digital experiences
+        that bind to their brand.</p>
+    </div>
+  </div>
 
   <!-- Our creations -->
 
