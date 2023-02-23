@@ -42,13 +42,17 @@
       background-position: top;
       background-size: contain;
       height: 90vh;
+      position: relative;
+      z-index: -2;
     }
 
     .filter {
+      position: absolute;
       background-color: var(--black);
       width: 100%;
-      height: 100%;
-      opacity: 30%;
+      height: calc(100% - .3rem);
+      opacity: 35%;
+      z-index: -1;
     }
   </style>
 </head>
@@ -56,6 +60,18 @@
 <body>
   <header>
     <div class="filter"></div>
+
+    <nav>
+      <img src="images/logo.svg" alt="logo.svg">
+
+      <div class="options">
+        <span>About</span>
+        <span>Careers</span>
+        <span>Events</span>
+        <span>Products</span>
+        <span>Support</span>
+      </div>
+    </nav>
   </header>
   <!-- About -->
   <!-- Careers -->
