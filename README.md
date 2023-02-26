@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: URL SOLUTION HERE
+- Solution URL: https://www.frontendmentor.io/solutions/loopstudios-landing-page-html-css-javascript-wVDXbEKDnw
 - Live Site URL: https://loopstudios-landing-page-rafael.netlify.app
 
 ### Screenshot
