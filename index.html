@@ -190,25 +190,16 @@
       max-height: 35rem;
       height: 100vh;
       position: relative;
+      cursor: pointer;
     }
 
     .creation:hover h2 {
       color: var(--black);
     }
 
-
-    /* position: absolute;
-      background-color: var(--black);
-      width: 100%;
-      height: 100%;
-      opacity: 35%;
-      z-index: -1; */
     .creation:hover .filter {
+      opacity: 65%;
       background-color: var(--white);
-    }
-
-    .creation .filter {
-      height: 100%
     }
 
     .creation img {
@@ -226,6 +217,7 @@
       font-weight: lighter;
       color: var(--white);
       padding: 3rem;
+      transition: .5s all ease;
     }
 
     footer {
@@ -250,6 +242,14 @@
       gap: 2.5rem;
       font-family: 'Alata', sans-serif;
       color: var(--white);
+    }
+
+    .option_footer span:hover,
+    .social_images img:hover {
+      cursor: pointer;
+      transition: .5s all ease-in-out;
+      padding: 0 0 .3rem 0;
+      border-bottom: 2px solid var(--white);
     }
 
     .social {
