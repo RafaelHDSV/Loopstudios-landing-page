@@ -4,7 +4,7 @@
 ![GitHub language count](https://img.shields.io/github/languages/count/RafaelHDSV/Loopstudios-landing-page?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/RafaelHDSV/Loopstudios-landing-page?style=for-the-badge)
 
-<img src="images/desktop.png" alt="images/desktop.png">
+<img src="images/desktop_main.png" alt="images/desktop_main.png">
 
 > This is a solution to the [Loopstudios landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/loopstudios-landing-page-N88J5Onjw). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
