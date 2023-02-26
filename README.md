@@ -49,4 +49,4 @@ Users should be able to:
 - CSS
 - JAVASCRIPT
 
-[⬆ Back to the top](#name_of_repository)<br>
+[⬆ Back to the top](#frontend-mentor---loopstudios-landing-page-solution)<br>
