@@ -293,6 +293,27 @@
       color: var(--white);
       font-size: 48px;
     }
+
+    @media screen and (max-width: 1330px) {
+      .interactive img {
+        max-width: none;
+        width: 100%;
+      }
+
+      .interactive .text {
+        position: initial;
+        text-align: center;
+        justify-content: center;
+        align-content: center;
+        padding: 5rem;
+        max-width: none;
+      }
+
+      .creations {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+      }
+    }
   </style>
 </head>
 
