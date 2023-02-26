@@ -38,21 +38,25 @@
     header {
       display: flex;
       flex-direction: column;
-      background: url('./images/desktop/image-hero.jpg') no-repeat;
-      background-position: top;
-      background-size: contain;
       height: 90vh;
       position: relative;
-      z-index: -2;
     }
 
     .filter {
       position: absolute;
       background-color: var(--black);
       width: 100%;
-      height: calc(100% - .6rem);
+      height: 100%;
       opacity: 35%;
       z-index: -1;
+    }
+
+    header .img_hero {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2;
     }
 
     nav {
@@ -72,6 +76,11 @@
       font-family: 'Alata', sans-serif;
       font-size: 17px;
       color: var(--white);
+      cursor: pointer;
+    }
+
+    .options span:hover {
+      border-bottom: 1px solid var(--white);
     }
 
     header h1 {
@@ -266,6 +275,7 @@
 <body>
   <header>
     <div class="filter"></div>
+    <img class="img_hero" src="images/desktop/image-hero.jpg" alt="image-hero.jpg">
 
     <nav>
       <img src="images/logo.svg" alt="logo.svg">
