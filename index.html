@@ -322,6 +322,10 @@
     }
 
     @media screen and (max-width: 990px) {
+      nav {
+        padding: 3rem;
+      }
+
       .options {
         display: none;
       }
@@ -348,6 +352,14 @@
     }
 
     @media screen and (max-width: 890px) {
+      header h1 {
+        font-size: 64px;
+      }
+
+      .interactive .text h2 {
+        font-size: 32px;
+      }
+
       .header_creations h2 {
         text-align: center;
         width: 100%;
@@ -370,6 +382,8 @@
     }
 
     @media screen and (max-width: 720px) {
+
+      .interactive,
       .our_creations {
         padding: 3rem;
       }
@@ -381,6 +395,18 @@
 
       .creation {
         max-height: 15rem;
+      }
+    }
+
+    @media screen and (max-width: 560px) {
+      header h1 {
+        font-size: 32px;
+      }
+    }
+
+    @media screen and (max-width: 410px) {
+      .interactive .text h2 {
+        font-size: 20px;
       }
     }
   </style>
@@ -403,14 +429,14 @@
       </div>
     </nav>
 
-    <!-- <h1>Immersive experiences that deliver</h1> -->
+    <h1>Immersive experiences that deliver</h1>
   </header>
 
   <div class="interactive">
     <img src="images/desktop/image-interactive.jpg" alt="image-interactive.jpg">
 
     <div class="text">
-      <!-- <h2>The leader in interactive VR</h2> -->
+      <h2>The leader in interactive VR</h2>
       <p>Founded in 2011, Loopstudios has been producing world-class virtual reality projects for some of the best
         companies around the globe. Our award-winning creations have transformed businesses through digital experiences
         that bind to their brand.</p>
