@@ -65,10 +65,19 @@
       justify-content: space-between;
       align-items: center;
       padding: 6rem 10rem 0 10rem;
+      z-index: 2;
     }
 
     .hamburguer {
       display: none;
+    }
+
+    .hamburguer_menu {
+      position: absolute;
+      width: 100%;
+      height: 100vh;
+      background-color: var(--black);
+      z-index: 1;
     }
 
     .options {
@@ -416,11 +425,23 @@
       .interactive .text h2 {
         font-size: 20px;
       }
+
+      .header_creations h2 {
+        font-size: 32px;
+      }
     }
   </style>
 </head>
 
 <body>
+  <div class="hamburguer_menu">
+    <span>About</span>
+    <span>Careers</span>
+    <span>Events</span>
+    <span>Products</span>
+    <span>Support</span>
+  </div>
+
   <header>
     <div class="filter"></div>
     <img class="img_hero" src="images/desktop/image-hero.jpg" alt="image-hero.jpg">
@@ -439,7 +460,7 @@
       <img class="hamburguer" src="images/icon-hamburger.svg" alt="icon-hamburger.svg">
     </nav>
 
-    <h1>Immersive experiences that deliver</h1>
+    <!-- <h1>Immersive experiences that deliver</h1> -->
   </header>
 
   <div class="interactive">
@@ -543,57 +564,44 @@
   </div>
 
   <script>
+    let hamburguer = document.querySelector('.hamburguer')
+    let hamburguerMenu = document.querySelector('.hamburguer_menu')
+    let imgHero = document.querySelector('.img_hero')
+    let imgInteractive = document.querySelector('.interactive img')
     let imgCreation = document.querySelectorAll('.creation img')
+    let hamburguerBoolean = true
 
     setInterval(() => {
-      if (window.screen.width < 1330) {
-
-      } else {
-
-      }
-
-      if (window.screen.width < 990) {
-
-      } else {
-
-      }
-
-      if (window.screen.width < 890) {
-
-      } else {
-
-      }
-
       if (window.screen.width < 720) {
-        for (let i = 0; i < imgCreation.length; i++) {
-          imgCreation[i].src = imgCreation[i].src.replace('desktop', 'mobile')
-        }
-      } else {
-        for (let i = 0; i < imgCreation.length; i++) {
-          imgCreation[i].src = imgCreation[i].src.replace('mobile', 'desktop')
-        }
-      }
+        imgHero.src = imgHero.src.replace('desktop', 'mobile')
 
-      if (window.screen.width < 560) {
-        for (let i = 0; i < imgCreation.length; i++) {
-          imgCreation[i].src = imgCreation[i].src.replace('desktop', 'mobile')
-        }
-      } else {
-        for (let i = 0; i < imgCreation.length; i++) {
-          imgCreation[i].src = imgCreation[i].src.replace('mobile', 'desktop')
-        }
-      }
+        imgInteractive.src = imgInteractive.src.replace('desktop', 'mobile')
 
-      if (window.screen.width < 410) {
         for (let i = 0; i < imgCreation.length; i++) {
           imgCreation[i].src = imgCreation[i].src.replace('desktop', 'mobile')
         }
       } else {
+        imgHero.src = imgHero.src.replace('mobile', 'desktop')
+
+        imgInteractive.src = imgInteractive.src.replace('mobile', 'desktop')
+
         for (let i = 0; i < imgCreation.length; i++) {
           imgCreation[i].src = imgCreation[i].src.replace('mobile', 'desktop')
         }
       }
     }, 1000)
+
+    hamburguer.addEventListener('click', () => {
+      hamburguerBoolean = !hamburguerBoolean
+
+      if (hamburguerBoolean == true) {
+        hamburguer.src = 'images/icon-hamburger.svg'
+        hamburguerMenu.style.display = 'none'
+      } else {
+        hamburguer.src = 'images/icon-close.svg'
+        hamburguerMenu.style.display = 'flex'
+      }
+    })
   </script>
 </body>
 
