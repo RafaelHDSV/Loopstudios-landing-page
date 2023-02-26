@@ -129,7 +129,7 @@
       display: flex;
       flex-direction: column;
       gap: 5rem;
-      padding: 0 10rem;
+      padding: 0 10rem 10rem 10rem;
     }
 
     .header_creations {
@@ -193,6 +193,30 @@
       font-weight: lighter;
       color: var(--white);
       padding: 3rem;
+    }
+
+    footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 3rem 10rem 8rem 10rem;
+      background-color: var(--black);
+      max-height: 10rem;
+      height: 100vh;
+    }
+
+    .options_footer {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+
+    .option_footer {
+      display: flex;
+      gap: 2.5rem;
+      font-family: 'Alata', sans-serif;
+      color: var(--white);
     }
   </style>
 </head>
@@ -284,22 +308,30 @@
     </div>
   </div>
 
-  <!-- Deep earth -->
-  <!-- Night arcade -->
-  <!-- Soccer team VR -->
-  <!-- The grid -->
-  <!-- From up above VR -->
-  <!-- Pocket borealis -->
-  <!-- The curiosity -->
-  <!-- Make it fisheye -->
+  <footer>
+    <div class="options_footer">
+      <img src="images/logo.svg" alt="logo.svg">
 
-  <!-- About -->
-  <!-- Careers -->
-  <!-- Events -->
-  <!-- Products -->
-  <!-- Support -->
+      <div class="option_footer">
+        <span>About</span>
+        <span>Careers</span>
+        <span>Events</span>
+        <span>Products</span>
+        <span>Support</span>
+      </div>
+    </div>
 
-  <!-- © 2021 Loopstudios. All rights reserved. -->
+    <div class="social">
+      <div class="social_images">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+        <img src="" alt="">
+      </div>
+
+      <p>© 2021 Loopstudios. All rights reserved.</p>
+    </div>
+  </footer>
 
   <!-- <footer>
     <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
