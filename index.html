@@ -315,7 +315,7 @@
         text-align: center;
         justify-content: center;
         align-content: center;
-        padding: 5rem;
+        padding: 2rem 0;
         max-width: none;
       }
 
@@ -541,6 +541,60 @@
     <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</p>
     <p>Coded by <a href="https://github.com/RafaelHDSV" target="_blank">Rafael Henrique de Sousa Vieira</a>.</p>
   </div>
+
+  <script>
+    let imgCreation = document.querySelectorAll('.creation img')
+
+    setInterval(() => {
+      if (window.screen.width < 1330) {
+
+      } else {
+
+      }
+
+      if (window.screen.width < 990) {
+
+      } else {
+
+      }
+
+      if (window.screen.width < 890) {
+
+      } else {
+
+      }
+
+      if (window.screen.width < 720) {
+        for (let i = 0; i < imgCreation.length; i++) {
+          imgCreation[i].src = imgCreation[i].src.replace('desktop', 'mobile')
+        }
+      } else {
+        for (let i = 0; i < imgCreation.length; i++) {
+          imgCreation[i].src = imgCreation[i].src.replace('mobile', 'desktop')
+        }
+      }
+
+      if (window.screen.width < 560) {
+        for (let i = 0; i < imgCreation.length; i++) {
+          imgCreation[i].src = imgCreation[i].src.replace('desktop', 'mobile')
+        }
+      } else {
+        for (let i = 0; i < imgCreation.length; i++) {
+          imgCreation[i].src = imgCreation[i].src.replace('mobile', 'desktop')
+        }
+      }
+
+      if (window.screen.width < 410) {
+        for (let i = 0; i < imgCreation.length; i++) {
+          imgCreation[i].src = imgCreation[i].src.replace('desktop', 'mobile')
+        }
+      } else {
+        for (let i = 0; i < imgCreation.length; i++) {
+          imgCreation[i].src = imgCreation[i].src.replace('mobile', 'desktop')
+        }
+      }
+    }, 1000)
+  </script>
 </body>
 
 </html>
