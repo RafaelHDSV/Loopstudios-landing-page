@@ -76,11 +76,13 @@
       font-family: 'Alata', sans-serif;
       font-size: 17px;
       color: var(--white);
+      padding: 0 0 .5rem 0;
       cursor: pointer;
     }
 
     .options span:hover {
-      border-bottom: 1px solid var(--white);
+      opacity: 75%;
+      border-bottom: 2px solid var(--white);
     }
 
     header h1 {
@@ -165,6 +167,13 @@
       border: 1px solid var(--black);
       padding: 0 2.5rem;
       max-height: 2.7rem;
+      cursor: pointer;
+      transition: .5s all ease;
+    }
+
+    .header_creations button:hover {
+      background-color: var(--black);
+      color: var(--white);
     }
 
     .creations {
@@ -181,6 +190,21 @@
       max-height: 35rem;
       height: 100vh;
       position: relative;
+    }
+
+    .creation:hover h2 {
+      color: var(--black);
+    }
+
+
+    /* position: absolute;
+      background-color: var(--black);
+      width: 100%;
+      height: 100%;
+      opacity: 35%;
+      z-index: -1; */
+    .creation:hover .filter {
+      background-color: var(--white);
     }
 
     .creation .filter {
