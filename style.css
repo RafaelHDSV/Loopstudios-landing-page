@@ -427,3 +427,12 @@ footer {
         font-size: 32px;
     }
 }
+
+/* board22 visit-count */
+footer #va-visits {
+  margin: 0.25rem 0 0;
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  background: transparent;
+}
